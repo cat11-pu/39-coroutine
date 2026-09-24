@@ -1,0 +1,13 @@
+{
+  "quantum": 2,
+  "max_ticks": 8,
+  "deadlocked": [],
+  "task_invariant": true,
+  "steps_done": {"t1": 4, "t2": 3, "t3": 2},
+  "events": [{"at": 3, "wake": "e1"}],
+  "tasks": [
+    {"name": "t1", "steps": ["cpu", "cpu", "cpu", "cpu"]},
+    {"name": "t2", "steps": ["cpu", "wait:e1", "cpu"]},
+    {"name": "t3", "steps": ["cpu", "cpu"]}
+  ]
+}
